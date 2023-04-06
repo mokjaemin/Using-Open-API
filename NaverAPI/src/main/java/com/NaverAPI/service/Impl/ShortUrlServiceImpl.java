@@ -65,7 +65,7 @@ public class ShortUrlServiceImpl implements ShortUrlService {
 		ShortUrlResponseDto shortUrlResponseDto = new ShortUrlResponseDto(orgUrl, shortUrl);
 
 		// Cache Logic
-		// shortUrlRedisRepository.save(shortUrlResponseDto);
+		shortUrlRedisRepository.save(shortUrlResponseDto);
 
 		LOGGER.info("[ShortUrlServiceImpl : generateShortUrl] Response DTO : {}", shortUrlResponseDto);
 		return shortUrlResponseDto;
@@ -78,13 +78,13 @@ public class ShortUrlServiceImpl implements ShortUrlService {
 		LOGGER.info("[ShortUrlServiceImpl : getShortUrl] request data : {}", originalUrl);
 
 		// Cache Logic
-//		Optional<ShortUrlResponseDto> foundResponseDto = shortUrlRedisRepository.findById(originalUrl);
-//		if (foundResponseDto.isPresent()) {
-//			LOGGER.info("[ShortUrlServiceImpl : getShortUrl] Cache Data existed.");
-//			return foundResponseDto.get();
-//		} else {
-//			LOGGER.info("[ShortUrlServiceImpl : getShortUrl] Cache Data does not existed.");
-//		}
+		Optional<ShortUrlResponseDto> foundResponseDto = shortUrlRedisRepository.findById(originalUrl);
+		if (foundResponseDto.isPresent()) {
+			LOGGER.info("[ShortUrlServiceImpl : getShortUrl] Cache Data existed.");
+			return foundResponseDto.get();
+		} else {
+			LOGGER.info("[ShortUrlServiceImpl : getShortUrl] Cache Data does not existed.");
+		}
 
 		
 		// Searching Short URL
@@ -120,7 +120,7 @@ public class ShortUrlServiceImpl implements ShortUrlService {
 		ShortUrlResponseDto shortUrlResponseDto = new ShortUrlResponseDto(orgUrl, shortUrl);
 
 		// Saving in Cache
-		// shortUrlRedisRepository.save(shortUrlResponseDto);
+		 shortUrlRedisRepository.save(shortUrlResponseDto);
 
 		LOGGER.info("[ShortUrlServiceImpl : getShortUrl] Response DTO : {}", shortUrlResponseDto);
 		return shortUrlResponseDto;
