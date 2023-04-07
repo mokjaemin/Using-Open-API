@@ -10,7 +10,7 @@ FOLDERS DESCRIPTION
 
 NAVER OPEN API : Try to use NAVER OPEN API
 - Short URL (Logic is in ShortURLServiceImpl)
-- Spring Boot, Maven
+- - Spring Boot, Maven
 - HTTP Requests/Response
 - Restful API, REST TEMPLETE, Swaggger(API testing)
 - MVC, IoC/DI
