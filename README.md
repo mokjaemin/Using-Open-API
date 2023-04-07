@@ -8,7 +8,7 @@ Therefore, I'm trying to use OPEN API. In the future, I hope that I can make var
 FOLDERS DESCRIPTION
 
 
-NAVER OPEN API : Try to use NAVER OPEN API
+1. NAVER OPEN API : Try to use NAVER OPEN API
 - Short URL (Logic is in ShortURLServiceImpl)
 - - Spring Boot, Maven
 - - HTTP Requests/Response
