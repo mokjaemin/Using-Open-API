@@ -15,4 +15,4 @@ NAVER OPEN API : Try to use NAVER OPEN API
 - - Restful API, REST TEMPLETE, Swaggger(API testing)
 - - MVC, IoC/DI
 - - Cache, JPA for DB API
-- - Redis for Cache, Mybatis with AWS for DB API
+- - Redis for Cache, MySQL with AWS for DB API
