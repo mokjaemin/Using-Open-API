@@ -14,5 +14,5 @@ FOLDERS DESCRIPTION
 - - HTTP Requests/Response
 - - Restful API, REST TEMPLETE, Swaggger(API testing)
 - - MVC, IoC/DI
-- - Cache, JPA for DB API
+- - Cache, JPA
 - - Redis for Cache, MySQL with AWS for DB API
